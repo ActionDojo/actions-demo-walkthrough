@@ -65,87 +65,60 @@
 				]
 			},
 			{
-				"id": "code-ibmi-actions",
-				"title": "Code for IBM i Actions",
-				"description": "Actions are the way to manage your compile options. You can add, remove, and edit actions. You have to be connected first!",
+				"id": "setup",
+				"title": "Setup your Environment",
 				"steps": [
 					{
-						"id": "viewactions",
-						"title": "View actions",
-						"description": "There is a special window you can use to view your actions.",
+						"id": "welcome",
+						"title": "Welcome",
+						"description": "Welcome to the GitHub Actions demo!",
 						"media": {
-							"markdown": "./content/code-ibmi-actions/viewactions.md"
-						},
-						"completionEvents": [
-							"onCommand:code-for-ibmi.showActionsMaintenance"
-						]
-					},
-					{
-						"id": "maintainaction",
-						"title": "Add an action",
-						"description": "You can add an action by clicking the button in the Code for IBM i panel.",
-						"media": {
-							"markdown": "./content/code-ibmi-actions/maintainaction.md"
+							"markdown": "./content/setup-environment/welcome.md"
 						}
 					},
 					{
-						"id": "runaction",
-						"title": "Run an action",
-						"description": "You can run an action by using a shortcut when you have code open.",
+						"id": "codespaces",
+						"title": "Codespaces",
 						"media": {
-							"markdown": "./content/code-ibmi-actions/runaction.md"
-						},
-						"completionEvents": [
-							"onCommand:code-for-ibmi.runAction"
-						]
+							"markdown": "./content/setup-environment/codespaces.md"
+						}
 					},
 					{
-						"id": "runactionfrompanel",
-						"title": "Run an action from a panel",
-						"description": "You can run actions without opening any code.",
+						"id": "publish",
+						"title": "Publish your project",
 						"media": {
-							"markdown": "./content/code-ibmi-actions/runactionfrompanel.md"
-						},
-						"completionEvents": [
-							"onCommand:code-for-ibmi.runAction"
-						]
+							"markdown": "./content/setup-environment/publish.md"
+						}
 					}
 				]
 			},
 			{
-				"id": "code-ibmi-ifsBrowser",
-				"title": "Code for IBM i IFS Browser",
-				"description": "The IFS Browser is a way to browse IFS files. You can use it to browse your IFS files and folders.",
+				"id": "actions-quickstart",
+				"title": "GitHub Actions Quickstart",
+				"description": "Create a run a simple GitHub Actions in less than 5 minutes.",
 				"steps": [
 					{
-						"id": "usingifsbrowser",
-						"title": "Using the IFS Browser",
-						"description": "What you need to know when using the IFS Browser",
+						"id": "first-workflow",
+						"title": "Hello World",
+						"description": "Step 1: Create your first workflow",
 						"media": {
-							"markdown": "./content/code-ibmi-ifsBrowser/usingifsbrowser.md"
+							"markdown": "./content/actions-quickstart/first-workflow.md"
 						}
 					},
 					{
-						"id": "changeworkingdir",
-						"title": "Change the working directory",
-						"description": "Change your home directory will allow you to work with more files",
+						"id": "push-changes",
+						"title": "Push to GitHub",
+						"description": "Step 2: Push your changes to GitHub",
 						"media": {
-							"markdown": "./content/code-ibmi-ifsBrowser/changeworkingdir.md"
-						},
-						"completionEvents": [
-							"onCommand:code-for-ibmi.changeHomeDirectory"
-						]
-					},
-					{
-						"id": "ifstips",
-						"title": "IFS Browser Tips",
-						"description": "Just a couple of additional tips for using the IFS Browser",
-						"media": {
-							"markdown": "./content/code-ibmi-ifsBrowser/ifstips.md"
+							"markdown": "./content/actions-quickstart/push-changes.md"
 						}
 					}
 				]
 			},
+
+
+
+			
 			{
 				"id": "code-ibmi-local",
 				"title": "Local Development with ILE",
