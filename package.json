@@ -41,7 +41,10 @@
 						"description": "Welcome to the GitHub Actions demo!",
 						"media": {
 							"markdown": "./content/setup-environment/welcome.md"
-						}
+						},
+						"activationEvents": [
+							"onStartupFinished"
+						]
 					},
 					{
 						"id": "codespaces",
@@ -61,34 +64,6 @@
 						"completionEvents": [
 							
 						]
-					}
-				]
-			},
-			{
-				"id": "setup",
-				"title": "Setup your Environment",
-				"steps": [
-					{
-						"id": "welcome",
-						"title": "Welcome",
-						"description": "Welcome to the GitHub Actions demo!",
-						"media": {
-							"markdown": "./content/setup-environment/welcome.md"
-						}
-					},
-					{
-						"id": "codespaces",
-						"title": "Codespaces",
-						"media": {
-							"markdown": "./content/setup-environment/codespaces.md"
-						}
-					},
-					{
-						"id": "publish",
-						"title": "Publish your project",
-						"media": {
-							"markdown": "./content/setup-environment/publish.md"
-						}
 					}
 				]
 			},
@@ -118,7 +93,7 @@
 
 
 
-			
+
 			{
 				"id": "code-ibmi-local",
 				"title": "Local Development with ILE",
