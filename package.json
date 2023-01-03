@@ -31,16 +31,15 @@
 		"commands": [],
 		"walkthroughs": [
 			{
-				"id": "setup",
-				"title": "Setup your Environment",
-				"description": "Thanks to Codespaces, setting up your environment has already been done!",
+				"id": "get-started",
+				"title": "Welcome!",
+				"description": "Getting started with the GitHub Actions Playground",
 				"steps": [
 					{
-						"id": "welcome",
-						"title": "Welcome",
-						"description": "Welcome to the GitHub Actions demo!",
+						"id": "overview",
+						"title": "Quick Overview",
 						"media": {
-							"markdown": "./content/setup-environment/welcome.md"
+							"markdown": "./content/welcome/overview.md"
 						},
 						"activationEvents": [
 							"onStartupFinished"
@@ -61,9 +60,7 @@
 						"media": {
 							"markdown": "./content/setup-environment/publish.md"
 						},
-						"completionEvents": [
-							
-						]
+						"completionEvents": []
 					}
 				]
 			},
@@ -87,13 +84,17 @@
 						"media": {
 							"markdown": "./content/actions-quickstart/push-changes.md"
 						}
+					},
+					{
+						"id": "view-workflows",
+						"title": "Viewing Workflow Runs",
+						"description": "Step 3: View workflow runs",
+						"media": {
+							"markdown": "./content/actions-quickstart/view-workflows.md"
+						}
 					}
 				]
 			},
-
-
-
-
 			{
 				"id": "code-ibmi-local",
 				"title": "Local Development with ILE",
