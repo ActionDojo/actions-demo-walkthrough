@@ -69,6 +69,43 @@
 						}
 					}
 				]
+			},
+			{
+				"id": "workflows",
+				"title": "Writing YAML Workflows",
+				"description": "Learn how to write YAML workflows for CI",
+				"steps": [
+					{
+						"id": "simple-workflow",
+						"title": "Simple Workflow",
+						"media": {
+							"markdown": "./content/workflows/hello-world.md"
+						}
+					},
+					{
+						"id": "questions",
+						"title": "Common Questions",
+						"media": {
+							"markdown": "./content/welcome/questions.md"
+						}
+					},
+					{
+						"id": "setup",
+						"title": "Setup Process",
+						"description": "Cloud-based integrated development environments",
+						"media": {
+							"markdown": "./content/welcome/codespaces.md"
+						}
+					},
+					{
+						"id": "publish",
+						"title": "Publish to GitHub",
+						"description": "Publish your project to GitHub to enable GitHub Actions.",
+						"media": {
+							"markdown": "./content/welcome/publish.md"
+						}
+					}
+				]
 			}
 		]
 	},
