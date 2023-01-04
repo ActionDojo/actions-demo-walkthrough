@@ -1,20 +1,15 @@
 <img src="./professortocat.png" width="40%"/>
 
-<h2>Hey there! 👋 </h2>
+<h3>Welcome to the Actions Playground. In this demo I'll introduce you to GitHub Actions, the most popular tool for automating CI/CD workflows. I’ll also touch on Codespaces, the tool you're currently using to access this development environment.
 
-<h3>Welcome to the Actions Playground. In this demo I'll introduce you to GitHub Actions, the most popular tool for automating CI/CD workflows. I’ll also introduce you to Codespaces, the tool you're currently using to access this development environment.
-
-By the end of the demo, you’ll know how to:
+By the end, you’ll know how to:
 
 1. Write and run your own YAML workflows
 2. Use these workflows to spot errors and ensure code quality
 3. Identify common use-cases for GitHub Actions </h3>
 
-<h2>Who this demo is for</h2>
-<h3>This demo is designed for developers learning about Actions. If you’re new to Git, GitHub and version control, you'll probably want to learn about those concepts first.</h3>
-
 <h2>Core concepts</h2>
-<h3>At each step we’ll teach you one of the following core concepts:
+<h3>In each walkthrough, we’ll teach you one of the following core concepts:
 
 1. Writing YAML file and viewing workflow runs
 2. Building Continuous Integration (CI) workflows

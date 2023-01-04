@@ -6,9 +6,9 @@ Since we're starting from a Codespace, you'll need to publish this project to yo
 
 1. Click the "Source Control" button in your sidebar
 2. Click the "Publish Branch" button.
-3. Make sure to select "Publish to GitHub public repository" (Important! If you publish as a private repo, you'll be drawing from your account's Actions minutes)
-4. Name your repository and hit "Enter".</h3>
+3. Name your repository and hit "Enter".
 
+_Important: Make sure to publish the project as a “public repository” if you don’t want to use your monthly Actions minutes._</h3>
 
 ![](./publish.png)
 
