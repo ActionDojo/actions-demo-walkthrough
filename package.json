@@ -32,12 +32,12 @@
 		"walkthroughs": [
 			{
 				"id": "get-started",
-				"title": "Welcome!",
+				"title": "Welcome",
 				"description": "Getting started with the GitHub Actions Playground",
 				"steps": [
 					{
 						"id": "overview",
-						"title": "Quick Overview",
+						"title": "Overview",
 						"media": {
 							"markdown": "./content/welcome/overview.md"
 						},
@@ -46,19 +46,26 @@
 						]
 					},
 					{
-						"id": "codespaces",
-						"title": "Codespaces",
-						"description": "Welcome to Codespaces, a cloud-based integrated development environment.",
+						"id": "questions",
+						"title": "Common Questions",
 						"media": {
-							"markdown": "./content/setup-environment/codespaces.md"
+							"markdown": "./content/welcome/questions.md"
+						}
+					},
+					{
+						"id": "setup",
+						"title": "Setup Process",
+						"description": "Cloud-based integrated development environments",
+						"media": {
+							"markdown": "./content/welcome/codespaces.md"
 						}
 					},
 					{
 						"id": "publish",
-						"title": "Publish your project",
+						"title": "Publish to GitHub",
 						"description": "Publish your project to GitHub to enable GitHub Actions.",
 						"media": {
-							"markdown": "./content/setup-environment/publish.md"
+							"markdown": "./content/welcome/publish.md"
 						},
 						"completionEvents": []
 					}
