@@ -1,12 +1,21 @@
 <h1>Time to create your first Actions workflow!</h1>
 
 <h3>
-GitHub Actions uses the YAML language for defining workflows. YAML (YAML Ain't Markup Language) is a human-readable data serialization language that is commonly used for configuration files, and is well-suited to defining workflows because it is easy to read and write.
+GitHub Actions uses the YAML language for defining workflows.
 
-To define a workflow, you will create a file with a ".yml" extension in your repo, and then use YAML syntax to specify the steps in your workflow, as well as any inputs or outputs that are needed.
+To define a workflow, you'll create a file with a `.yml` extension in the `.github/workflows/` directory, and then use YAML syntax to specify the steps in your workflow, as well as any inputs or outputs needed.
 
-We'll start by writing a simple YAML file that prints "Hello World" into the console every time a contributor pushes code.</h3>
+We'll start by writing a simple workflow that prints "Hello World" into the console every time a contributor pushes code.</h3>
 
+<h3>To use this YAML file:
+
+1. Create a folder in your root directory called “.github/workflows/” – _for Actions to work, your YAML files need to be in the “.github/workflows/” folder._
+
+2. Create a file named “hello-world.yml”
+
+![](./create-file.png)
+
+3. Paste this code into the “hello-world.yml” file
 ```yml
 name: Hello World
 
@@ -19,14 +28,12 @@ jobs:
       run: echo "Hello world"
 ```
 
-<h3>To use this YAML file:
+4. Push your changes to the repository – _The push event will trigger the workflow run, printing "Hello World" to the console._
 
-1. Create a folder in your root directory called “.github/workflows/” – _for Actions to work, your YAML files need to be in the “.github/workflows/” folder._
-2. Create a file named “hello-world.yml”
-![](./create-file.png)
-3. Paste this code into the “hello-world.yml” file
-4. Push your changes to the repository. – Upon the push event, the workflow run will be triggered, printing "Hello World" to the console.
-5. Open your terminal to see “Hello World” being printed in the console.</h3>
+
+
+5. Open your terminal to see “Hello World” in the console.</h3>
+
 
 <details>
 <summary><h2>YAML File Components</h2></summary>
