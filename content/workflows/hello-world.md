@@ -9,30 +9,32 @@ We'll start by writing a simple workflow that prints "Hello World" into the cons
 
 <h3>To use this YAML file:
 
-1. Create a folder in your root directory called “.github/workflows/” – _for Actions to work, your YAML files need to be in the “.github/workflows/” folder._
+1. Create a folder in your root directory called “.github/workflows/”
+_For Actions to work, your YAML files need to be in the “.github/workflows/” folder._
 
 2. Create a file named “hello-world.yml”
-
 ![](./create-file.png)
 
 3. Paste this code into the “hello-world.yml” file
 ```yml
-name: Hello World
+name: Hello world
 
 on: [push]
 
 jobs:
-  hello-world:
+  build:
     runs-on: ubuntu-latest
     steps:
-      run: echo "Hello world"
+    - name: Hello world
+      run: |
+        echo "Hello world"
 ```
 
-4. Push your changes to the repository – _The push event will trigger the workflow run, printing "Hello World" to the console._
+4. Push your changes to the repository
+![](./push-changes.png)
+_The push event will trigger the workflow run, printing "Hello World" to the Actions output._
 
-
-
-5. Open your terminal to see “Hello World” in the console.</h3>
+5. Open the job summary for your workflow run to see “Hello World” in the console.</h3>
 
 
 <details>
