@@ -41,9 +41,10 @@
 						"media": {
 							"markdown": "./content/welcome/overview.md"
 						},
-						"activationEvents": [
+						"activationEvents": [ 
 							"onStartupFinished"
-						]
+						],
+						"completionEvents": ["onView:myView.id"]
 					},
 					{
 						"id": "questions",
@@ -72,8 +73,8 @@
 			},
 			{
 				"id": "workflows",
-				"title": "Writing YAML Workflows",
-				"description": "Learn how to write YAML workflows for CI",
+				"title": "Writing Actions Workflows",
+				"description": "Learn how to write YAML workflows for GitHub Actions",
 				"steps": [
 					{
 						"id": "simple-workflow",
@@ -83,14 +84,7 @@
 						}
 					},
 					{
-						"id": "questions",
-						"title": "Common Questions",
-						"media": {
-							"markdown": "./content/welcome/questions.md"
-						}
-					},
-					{
-						"id": "setup",
+						"id": "workflow-runs",
 						"title": "Setup Process",
 						"description": "Cloud-based integrated development environments",
 						"media": {

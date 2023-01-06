@@ -1,6 +1,11 @@
-<h1>Hello World</h1>
+<h1>Time to create your first Actions workflow!</h1>
 
-<h3>Time to create your first Actions workflow. Here, we're going to write a simple YAML file that prints "Hello World" into the console every time a contributor pushes code to the repository.</h3>
+<h3>
+GitHub Actions uses the YAML language for defining workflows. YAML (YAML Ain't Markup Language) is a human-readable data serialization language that is commonly used for configuration files, and is well-suited to defining workflows because it is easy to read and write.
+
+To define a workflow, you will create a file with a ".yml" extension in your repo, and then use YAML syntax to specify the steps in your workflow, as well as any inputs or outputs that are needed.
+
+We'll start by writing a simple YAML file that prints "Hello World" into the console every time a contributor pushes code.</h3>
 
 ```yml
 name: Hello World
@@ -11,23 +16,14 @@ jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Check out repository code
-        uses: actions/checkout@v3
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
-      - run: echo "Hello world"
+      run: echo "Hello world"
 ```
 
 <h3>To use this YAML file:
 
-1. Create a folder in your root directory called “.github/workflows/” – For Actions to work, your YAML files need to be in the “.github/workflows/” folder.
+1. Create a folder in your root directory called “.github/workflows/” – _for Actions to work, your YAML files need to be in the “.github/workflows/” folder._
 2. Create a file named “hello-world.yml”
+![](./create-file.png)
 3. Paste this code into the “hello-world.yml” file
 4. Push your changes to the repository. – Upon the push event, the workflow run will be triggered, printing "Hello World" to the console.
 5. Open your terminal to see “Hello World” being printed in the console.</h3>
