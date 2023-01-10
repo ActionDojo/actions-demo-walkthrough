@@ -2,7 +2,7 @@
 
 <h3>
 
-To debug linting errors with GitHub Actions, you can follow these steps:
+To debug any linting errors caught by Actions, you can follow these steps:
 
 1. Navigate to the "Actions" tab of your repository on GitHub. This will show a list of all the workflow runs that have been triggered for your repository.
 
