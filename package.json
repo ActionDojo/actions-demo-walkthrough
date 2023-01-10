@@ -41,10 +41,12 @@
 						"media": {
 							"markdown": "./content/welcome/overview.md"
 						},
-						"activationEvents": [ 
+						"activationEvents": [
 							"onStartupFinished"
 						],
-						"completionEvents": ["onView:myView.id"]
+						"completionEvents": [
+							"onView:myView.id"
+						]
 					},
 					{
 						"id": "questions",
