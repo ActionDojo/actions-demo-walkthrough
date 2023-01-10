@@ -29,8 +29,6 @@ Let's get started!
         steps:
         - uses: actions/checkout@v2
         - uses: github/super-linter@v2
-        with:
-            args: "--enable all"
     ```
 
 4. 
@@ -40,8 +38,6 @@ Let's get started!
     - `github/super-linter@v2`: This step runs the Super Linter action, which lints your code using a variety of different linters. The `with` block specifies that we want to enable all of the available linters.
 
     The `- uses` keyword is followed by the name of the action being used and its version(specified using the @ symbol). In this case, an action is being run from the GitHub Actions Marketplace. You can also run actions that you've defined within your repository, or in other repositories in your organization/enterprise.
-
-    The `with` block specifies any additional options or configurations for the action. In this case, the args option is being used to specify that all of the available linters should be enabled.
 
 5. Here's the whole workflow file:
 
@@ -55,8 +51,6 @@ Let's get started!
         steps:
         - uses: actions/checkout@v2
         - uses: github/super-linter@v2
-        with:
-            args: "--enable all"
     ```
     To see your workflow run: push your changes, go to the Actions tab in GitHub, and click on the workflow run associated with this file. I'll explain how to do this in the next step.
 

@@ -3,13 +3,7 @@
 <h3>Difficulty: Moderate/Hard</h3>
 
 <h3>
-In the playground we deployed your website to GitHub Pages to demonstrate CD as a concept. In real-world development though, you’ll most often be deploying apps to your cloud provider.
-
-Practice setting up automatic deployments to your cloud provider with GitHub Actions:
-
-- [Deploy to Azure](https://docs.github.com/en/actions/deployment/deploying-to-your-cloud-provider/deploying-to-azure)
-
-- [Deploy to Amazon ECS](https://docs.github.com/en/actions/deployment/deploying-to-your-cloud-provider/deploying-to-amazon-elastic-container-service)
-
-- [Deploy to Google Serverless Computing with GitHub Actions](https://cloud.google.com/blog/topics/developers-practitioners/deploying-serverless-platforms-github-actions/)
+- **Branch protection rules:** [Require status checks before code can be merged](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches#require-status-checks-before-merging)
+- **Deploying with Environments:** [Create environments for your staging and deployment branches](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment#deployment-branches) to safely test changes before deploying them to your live site.
+- **Preview your site in PRs:** Preview your website from Pull Requests before deploying it using [this Action from the GitHub Marketplace](https://github.com/marketplace/actions/deploy-pr-preview)
 </h3>
