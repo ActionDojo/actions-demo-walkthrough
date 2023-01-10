@@ -1,73 +1,68 @@
-<h1>Time to create your first Actions workflow!</h1>
+<h1>Creating your first Actions workflow</h1>
 
 <h3>
-GitHub Actions uses the YAML language for defining workflows.
+GitHub Actions uses the YAML scripting language for defining workflows.
 
-To define a workflow, you'll create a file with a `.yml` extension in the `.github/workflows/` directory, and then use YAML syntax to specify the steps in your workflow, as well as any inputs or outputs needed.
+We'll start by writing a simple workflow that prints "Hello World" into the console every time someone pushes code to the repository.</h3>
+<h2>To build this workflow:</h2>
+<h3>
 
-We'll start by writing a simple workflow that prints "Hello World" into the console every time a contributor pushes code.</h3>
-
-<h3>To use this YAML file:
-
-1. Create a folder in your root directory called “.github/workflows/”
-_For Actions to work, your YAML files need to be in the “.github/workflows/” folder._
+1. Create a folder in your root directory called “.github/workflows/
+    _For Actions to work, your YAML files need to be in the “.github/workflows/” folder._
 
 2. Create a file named “hello-world.yml”
-![](./create-file.png)
+
+    ![](./create-file.png)
 
 3. Paste this code into the “hello-world.yml” file
-```yml
-name: Hello world
+    ```yml
+    name: Hello world
 
-on: [push]
+    on: [push]
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Hello world
-      run: |
-        echo "Hello world"
-```
+    jobs:
+      build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Hello world
+          run: |
+            echo "Hello world"
+    ```
 
 4. Push your changes to the repository
-![](./push-changes.png)
-_The push event will trigger the workflow run, printing "Hello World" to the Actions output._
+
+    ![](./push-changes.png)
+    _The push event will trigger the workflow run, printing "Hello World" to the Actions output._
 
 5. Open the job summary for your workflow run to see “Hello World” in the console.</h3>
 
 
-<details>
-<summary><h2>YAML File Components</h2></summary>
+<h2>YAML File Components</h2>
 <br>
 
-## “on:”
-<h3>Specifies which events will trigger the workflow. This field can contain one or more trigger events. Trigger events can be anything from a Pull Request to a new issue being created. You can even trigger workflows manually, on a specified schedule, or from an external event happening outside of GitHub (through an API integration).</h3>
+`on:`
+<h3>Specifies which events will trigger the workflow. You can specify one or more trigger events. Trigger events can be anything from a Pull Request to a new issue being created. You can even trigger workflows manually, on a specified schedule, or from an external event outside of GitHub(via API).</h3>
 
-## “jobs:”
-<h3>Defines a set of tasks to be executed as part of the workflow. Jobs are defined by a key (the name of the job) and the value (the details of the job). In this example, the job will run a single step that uses the echo command to print "Hello World" to the console. You can define multiple jobs in a single workflow, and each job can have multiple steps. Jobs can also depend on other jobs, allowing you to define complex workflows that execute multiple tasks in a specific order.</h3>
+`jobs:`
+<h3>Defines a set of tasks to be executed. Jobs are defined by a key (the name of the job) and the value (the details of the job). In this example, the job will run a single step that uses the echo command to print "Hello World" to the console. You can define multiple jobs in a single workflow, and each job can have multiple steps. Jobs can also depend on other jobs, allowing you to define complex workflows with multiple consecutive tasks.</h3>
 
-## “build:”
+`build:`
 <h3>This is the name of that specific job. A job is a named set of steps that define the work that needs to be done as part of a workflow. You can change the name of this job and it will still work.</h3>
 
-## “runs-on:”
-<h3>This defines the job’s “runners”. A runner is an execution environment that runs your workflow’s jobs. In this case, it’s the standard 2-core Ubuntu virtual machine hosted by GitHub. We also offer 3-core macOS runners, and various sizes of VMs available for Linux and Windows.. When you create a workflow, you can specify which type of runner the workflow should run on by using the runs-on field in the YAML file.</h3>
+`runs-on:`
+<h3>This defines the job’s “runners”. A runner is an execution environment that runs your workflow’s jobs. In this case, it’s the standard 2-core Ubuntu virtual machine hosted by GitHub. GitHub also offers 3-core macOS runners and various sizes of VMs (from 4 to 64 cores) for Linux and Windows. When you create a workflow, you can specify which type of runner a job will use in the `runs-on` field.</h3>
 
-## “steps:”
+`steps:`
 <h3>The value of the "steps" key is a list of objects, where each object defines a single action and its properties. Each task is represented by a "step" and is defined using a “- ” followed by a block of YAML that specifies the task to be performed.</h3>
 
-## “- uses:”
-<h3>This is one of the tasks that will be executed as part of the action. In this case, the “uses” field specifies the “actions/checkout” action, version v2. This action is responsible for checking out the code from the repository and making it available to the rest of the workflow. With “uses”, you can reference an open source action from the marketplace, or a defined action in one of your own private or public repositories.</h3>
-
-## “- run:”
+`- run:`
 <h3>This tells you what command to run. Here, we run the echo command to print "Hello World" to the console. You can run any command that is available on the runner operating system. These could be shell commands, scripts, or executables.
 
-For example, you can use “- run: ls” to list the files in the current directory, “- run: ./my-script.sh” to run a shell script, or - run: python my-script.py to run a Python script.
+For example, you can use `- run: ls` to list the files in the current directory, `- run: ./my-script.sh` to run a shell script.
 
-You can run multiple commands in a single “- run:” step by separating them with “&&”. For example, “- run: command1 && command2” would run command1 followed by command2.
+You can run multiple commands in a single `- run:` step by separating them with “&&”. For example, `- run: command1 && command2` would run command1 followed by command2.
 
-Keep in mind that the “- run:” step will only succeed if the command returns an exit code of 0. If the command returns a non-zero exit code, the step will be considered a failure.</h3>
-</details>
+Keep in mind that the `- run:` step will only succeed if the command returns an exit code of 0. If the command returns a non-zero exit code, the step will be considered a failure.</h3>
 
 <details>
 <summary><h2>Breakdown of YAML syntax</h2></summary>

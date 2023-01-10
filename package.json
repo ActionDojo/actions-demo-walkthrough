@@ -75,8 +75,8 @@
 			},
 			{
 				"id": "workflows",
-				"title": "Writing Actions Workflows",
-				"description": "Learn how to write YAML workflows for GitHub Actions",
+				"title": "Writing Workflows",
+				"description": "Writing YAML and building CI/CD pipelines with Actions",
 				"steps": [
 					{
 						"id": "simple-workflow",
@@ -86,19 +86,34 @@
 						}
 					},
 					{
-						"id": "workflow-runs",
-						"title": "Setup Process",
-						"description": "Cloud-based integrated development environments",
+						"id": "first-output",
+						"title": "Viewing your workflow runs",
 						"media": {
-							"markdown": "./content/welcome/codespaces.md"
+							"markdown": "./content/workflows/first-output.md"
 						}
 					},
 					{
-						"id": "publish",
-						"title": "Publish to GitHub",
-						"description": "Publish your project to GitHub to enable GitHub Actions.",
+						"id": "linter",
+						"title": "Continuous Integration (CI)",
+						"description": "Building CI workflows",
 						"media": {
-							"markdown": "./content/welcome/publish.md"
+							"markdown": "./content/workflows/linter.md"
+						}
+					},
+					{
+						"id": "live-server",
+						"title": "CI Output",
+						"description": "Catching linting errors",
+						"media": {
+							"markdown": "./content/workflows/ci-output.md"
+						}
+					},
+					{
+						"id": "deploy",
+						"title": "Continuous Deploying (CD)",
+						"description": "Building CD workflows",
+						"media": {
+							"markdown": "./content/workflows/deploy.md"
 						}
 					}
 				]
