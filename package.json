@@ -148,28 +148,28 @@
 					},
 					{
 						"id": "copilot",
-						"title": "Try Copilot",
+						"title": "Try Copilot (Easy)",
 						"media": {
 							"markdown": "./content/challenges/copilot.md"
 						}
 					},
 					{
 						"id": "ci-challenges",
-						"title": "CI Challenges",
+						"title": "CI Challenges (Moderate)",
 						"media": {
 							"markdown": "./content/challenges/ci.md"
 						}
 					},
 					{
 						"id": "cd-challenges",
-						"title": "CD Challenges",
+						"title": "CD Challenges (Difficult)",
 						"media": {
 							"markdown": "./content/challenges/cd.md"
 						}
 					},
 					{
 						"id": "security",
-						"title": "Security",
+						"title": "Security (Difficult)",
 						"media": {
 							"markdown": "./content/challenges/security.md"
 						}
