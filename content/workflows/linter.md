@@ -4,7 +4,7 @@
 
 We'll build a simple CI workflow that scans your code for linting errors whenever someone pushes code or submits a pull request to the repository.
 
-**Linting:** Steps that are run to check code for style and syntax errors. This ensures that code is consistent and follows best practices. The steps can include things like checking for syntax errors, enforcing coding style guidelines, checking for formatting issues, and ensuring code is correctly structured.
+**Linting:** Automatically checks your code to find syntax errors, enforce coding style guidelines, catch formatting issues, and ensure code is correctly structured.
 
 Let's get started!
 </h3>

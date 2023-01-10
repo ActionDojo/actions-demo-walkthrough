@@ -117,15 +117,59 @@
 						}
 					},
 					{
-						"id": "live-site",
-						"title": "Deploy your website",
-						"description": "Deploying your portfolio site",
+						"id": "deployed",
+						"title": "View Your Site",
+						"description": "Your portfolio website is now live",
 						"media": {
 							"markdown": "./content/workflows/cd-output.md"
 						}
+					},
+					{
+						"id": "conclusion",
+						"title": "Conclusion",
+						"description": "Start using Actions or keep exploring",
+						"media": {
+							"markdown": "./content/workflows/conclusion.md"
+						}
 					}
 				]
-			}
+			},
+			{
+				"id": "challenges",
+				"title": "Challenges",
+				"description": "Practice Writing Actions Workflows",
+				"steps": [
+					{
+						"id": "syntax",
+						"title": "YAML Syntax (Easy)",
+						"media": {
+							"markdown": "./content/challenges/syntax.md"
+						}
+					},
+					{
+						"id": "copilot",
+						"title": "Try Copilot",
+						"media": {
+							"markdown": "./content/challenges/copilot.md"
+						}
+					},
+					{
+						"id": "ci-challenges",
+						"title": "CI Challenges",
+						"media": {
+							"markdown": "./content/challenges/ci.md"
+						}
+					},
+					{
+						"id": "publish",
+						"title": "Publish to GitHub",
+						"description": "Publish your project to GitHub to enable GitHub Actions.",
+						"media": {
+							"markdown": "./content/welcome/publish.md"
+						}
+					}
+				]
+			},
 		]
 	},
 	"scripts": {

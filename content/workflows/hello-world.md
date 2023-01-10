@@ -50,19 +50,13 @@ We'll start by writing a simple workflow that prints "Hello World" into the cons
 <h3>This is the name of that specific job. A job is a named set of steps that define the work that needs to be done as part of a workflow. You can change the name of this job and it will still work.</h3>
 
 `runs-on:`
-<h3>This defines the job’s “runners”. A runner is an execution environment that runs your workflow’s jobs. In this case, it’s the standard 2-core Ubuntu virtual machine hosted by GitHub. GitHub also offers 3-core macOS runners and various sizes of VMs (from 4 to 64 cores) for Linux and Windows. When you create a workflow, you can specify which type of runner a job will use in the `runs-on` field.</h3>
+<h3>Defines the job’s “runners”. A runner is an execution environment that runs your workflow’s jobs. In this case, it’s a standard 2-core Ubuntu virtual machine hosted by GitHub. GitHub also offers 3-core macOS runners and various sizes of VMs (from 4 to 64 cores) for Linux and Windows.</h3>
 
 `steps:`
 <h3>The value of the "steps" key is a list of objects, where each object defines a single action and its properties. Each task is represented by a "step" and is defined using a “- ” followed by a block of YAML that specifies the task to be performed.</h3>
 
 `- run:`
-<h3>This tells you what command to run. Here, we run the echo command to print "Hello World" to the console. You can run any command that is available on the runner operating system. These could be shell commands, scripts, or executables.
-
-For example, you can use `- run: ls` to list the files in the current directory, `- run: ./my-script.sh` to run a shell script.
-
-You can run multiple commands in a single `- run:` step by separating them with “&&”. For example, `- run: command1 && command2` would run command1 followed by command2.
-
-Keep in mind that the `- run:` step will only succeed if the command returns an exit code of 0. If the command returns a non-zero exit code, the step will be considered a failure.</h3>
+<h3>This tells you what command to run. Here, we run the echo command to print "Hello World" to the console. You can run any command that is available on the runner operating system. These could be shell commands, scripts, or executables.</h2>
 
 <details><summary><h2>Breakdown of YAML syntax</h2></summary>
 <h3>YAML (short for “Yet Another Markup Language”) is a human-readable data serialization language that is used for storing and transmitting data structures and configurations. It is often used for configuration files, but can also be used for storing data in a serialized form, such as database dumps or log files.
