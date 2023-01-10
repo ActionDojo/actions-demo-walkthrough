@@ -1,4 +1,4 @@
-<h1>Continuous Integration (CI) Workflow</h1>
+<h1>Linting - Continuous Integration</h1>
 
 <h3>Continuous Integration (CI) is a software development practice where developers regularly merge their code changes to the repository. This allows teams to detect and fix errors quickly, as well as automate the build, test, and deployment process. CI can improve the quality of software and reduce the time it takes to deliver new features to users.
 
