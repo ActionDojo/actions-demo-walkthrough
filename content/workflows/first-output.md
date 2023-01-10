@@ -28,7 +28,7 @@
     ![](./step-output.png)
     ![](./step-output-2.png)
 
-By reviewing the output of workflow runs, you can understand what actions were taken as part of the workflow, and any errors or bugs that were caught by that workflow run. This is helpful for debugging errors in your code.
+By reviewing the output of workflow runs, you can understand what actions were taken as part of the workflow, and any errors or bugs that were caught by that workflow run.
 </h3>
 
 <h2>"Run Details" section</h2>

@@ -80,7 +80,7 @@
 				"steps": [
 					{
 						"id": "simple-workflow",
-						"title": "Simple Workflow",
+						"title": "Writing YAML files",
 						"media": {
 							"markdown": "./content/workflows/hello-world.md"
 						}
@@ -103,7 +103,7 @@
 					{
 						"id": "live-server",
 						"title": "CI Output",
-						"description": "Catch linting errors",
+						"description": "Catching linting errors",
 						"media": {
 							"markdown": "./content/workflows/ci-output.md"
 						}
@@ -111,15 +111,15 @@
 					{
 						"id": "deploy",
 						"title": "Continuous Deployment (CD)",
-						"description": "Build CD workflows",
+						"description": "Building CD workflows",
 						"media": {
 							"markdown": "./content/workflows/deploy.md"
 						}
 					},
 					{
 						"id": "live-site",
-						"title": "Deploying your website",
-						"description": "Debug and deploy your portfolio site ",
+						"title": "Deploy your website",
+						"description": "Deploying your portfolio site",
 						"media": {
 							"markdown": "./content/workflows/cd-output.md"
 						}

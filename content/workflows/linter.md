@@ -5,18 +5,9 @@
 
 We'll build a simple CI workflow that scans your code for linting errors whenever someone pushes code or submits a pull request to the repository.
 
-<details>
-<summary><h2>What does "linting" mean?</h2></summary>
-A linting workflow is a series of steps that are run to check code for style and syntax errors. Linting ensures that code is consistent and follows best practices.
+**What's "linting"?** A series of steps that are run to check code for style and syntax errors. This ensures that code is consistent and follows best practices. The steps can vary, but may include things like checking for syntax errors, enforcing coding style guidelines, checking for formatting issues, and ensuring that code is correctly structured.
 
-The specific steps included in a linting workflow can vary, but they may include things like checking for syntax errors, enforcing coding style guidelines, checking for formatting issues, and ensuring that code is correctly structured.
-
-Linters are typically run automatically as part of a Continuous Integration (CI) process, and the results of the linting checks are typically displayed in the CI pipeline. This allows developers to identify and fix linting issues as they work, rather than waiting until later on in the process.
-
-Overall, the purpose of a linting workflow is to help improve the quality and maintainability of the code in a repository.
-</details>
-
-Alright, let's get started!
+Let's get started!
 </h3>
 
 <h3>

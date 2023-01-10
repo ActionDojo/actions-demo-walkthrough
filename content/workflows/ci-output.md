@@ -1,12 +1,12 @@
 <h1>Debugging errors with your workflow</h1>
 
-<h2>To debug linting errors with GitHub Actions, you can follow these steps:</h2>
-
 <h3>
+
+To debug linting errors with GitHub Actions, you can follow these steps:
 
 1. Navigate to the "Actions" tab of your repository on GitHub. This will show a list of all the workflow runs that have been triggered for your repository.
 
-2. Look for a workflow run that included a linting job. You can identify a linting job by its name (e.g. "Lint") or by the actions that were run as part of the job (e.g. "github/super-linter").
+2. Look for the latest workflow run for your linter. You can identify a linting job by its name (e.g. "Linter"), or by the message left in your last commit.
 
 3. Click on the linting job to view its details. This will show you the steps that were run as part of the job, along with their output.
 
