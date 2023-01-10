@@ -1,10 +1,11 @@
 # Actions Demo Walkthrough
 
-This VS Code extension is for testing and building the Actions Playground (MVP) walkthroughs. It'll have the most up-to-date content for the Actions Playground demo.
+This VS Code extension is for testing and building the VS Code walkthrough extension for the Actions Playground MVP. It'll have the most up-to-date content for task list in the Actions Playground.
 
-Current state: The rough draft workflow steps are all there (Simple workflow, CI and CD) – they will need some editing to actually work
+Current state: The rough draft workflow steps are all there (Simple workflow, CI and CD) – CD will need more editing to actually work
 
 Remaining work:
+- [ ] Add instructions for deploying to GitHub Pages (CD)
 - [ ] Add a final step to the "Workflows" walkthrough for the demo completion step
 - [ ] Add a walkthrough for "Optional Challenges"
 
