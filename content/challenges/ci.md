@@ -1,6 +1,6 @@
-## YAML Syntax Challenges
+<h1> YAML Syntax Challenges </h1>
 
-<h2> **Difficulty:** Moderate </h2>
+<h3> **Difficulty:** Moderate </h3>
 
 <h3>
 
