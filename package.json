@@ -137,7 +137,7 @@
 			{
 				"id": "challenges",
 				"title": "Challenges",
-				"description": "Practice Writing Actions Workflows",
+				"description": "Try some challenges to build your Actions skills",
 				"steps": [
 					{
 						"id": "syntax",
@@ -161,15 +161,21 @@
 						}
 					},
 					{
-						"id": "publish",
-						"title": "Publish to GitHub",
-						"description": "Publish your project to GitHub to enable GitHub Actions.",
+						"id": "cd-challenges",
+						"title": "CD Challenges",
 						"media": {
-							"markdown": "./content/welcome/publish.md"
+							"markdown": "./content/challenges/cd.md"
+						}
+					},
+					{
+						"id": "security",
+						"title": "Security",
+						"media": {
+							"markdown": "./content/challenges/security.md"
 						}
 					}
 				]
-			},
+			}
 		]
 	},
 	"scripts": {
