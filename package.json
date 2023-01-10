@@ -87,7 +87,7 @@
 					},
 					{
 						"id": "first-output",
-						"title": "Viewing your workflow runs",
+						"title": "Viewing workflow runs",
 						"media": {
 							"markdown": "./content/workflows/first-output.md"
 						}
@@ -103,7 +103,7 @@
 					{
 						"id": "live-server",
 						"title": "CI Output",
-						"description": "Catching linting errors",
+						"description": "Catch linting errors",
 						"media": {
 							"markdown": "./content/workflows/ci-output.md"
 						}
@@ -111,15 +111,15 @@
 					{
 						"id": "deploy",
 						"title": "Continuous Deployment (CD)",
-						"description": "Building CD workflows to deploy your portfolio",
+						"description": "Build CD workflows",
 						"media": {
 							"markdown": "./content/workflows/deploy.md"
 						}
 					},
 					{
 						"id": "live-site",
-						"title": "Deploying your portfolio",
-						"description": "Debug CD workflow runs and view your portfolio",
+						"title": "Deploying your website",
+						"description": "Debug and deploy your portfolio site ",
 						"media": {
 							"markdown": "./content/workflows/cd-output.md"
 						}
