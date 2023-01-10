@@ -1,5 +1,12 @@
 <h1>Continuous Deployment (CD)</h1>
-<h3>To automatically deploy a website to GitHub Pages using GitHub Actions, you will need to do the following:
+
+<h2>What is CD?</h2>
+<h3>Continuous Deployment (CD) is a development practice in which code changes are automatically built, tested, and deployed to production as soon as they are committed to the repository. This allows organizations to deliver new features and updates to users more quickly, and reduces the risk of errors and downtime. Continuous Deployment is an extension of Continuous Integration, and typically involves additional automation and testing to ensure that code changes are safe to deploy to production.
+
+To demonstrate the concept, we'll practice deploying a static portfolio website to GitHub Pages. In a typical software project you would be deploying a dynamic application to your cloud provider of choice – like Azure, AWS or GCP.</h3>
+
+
+<h3>Here are the steps to automatically deploy a website to GitHub Pages using Actions:
 
 1. Create a new file in your repository called `.github/workflows/deploy.yml`. This file will define your deployment workflow.
 

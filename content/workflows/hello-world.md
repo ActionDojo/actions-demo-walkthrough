@@ -74,6 +74,7 @@ Keep in mind that the `- run:` step will only succeed if the command returns an 
 [Code block example]
 ✅ For example, this syntax will work: “Key: Value”
 ⛔ But this will fail: “Key:Value”. (Because there’s no space after the colon)
+
 - Key-Value Pairs: YAML files use key-value pairs to represent data. The key is on the left side of the colon, and the value is on the right. Here are some examples:
 [Code block example]
 > - key: value
@@ -83,15 +84,20 @@ Keep in mind that the `- run:` step will only succeed if the command returns an 
 > - boolean: true
 > - keys can have species in them: and so can values
 > - null-key-value: null
+
 - Quotes: String values do not need to be quoted, unless they contain special characters or if the value starts with certain characters (such as @, %, or ``). In these cases, single or double quotes can be used to enclose the value.
+
 - Lists & Collections: Lists and collections are represented by a hyphen followed by a space(“- ”) and can contain multiple items. Each item in the list must be indented at the same level.
 [Code block example]
+
 - Dictionaries: Dictionaries (also known as maps or associative arrays) are represented by a key followed by a colon and a value, with each key-value pair being indented at the same level.
 [Code block example]
+
 - Begin/End document: Defining the start and end of a document is optional. To start a document insert '---' at the top of the document, to end it, insert '...'
 Comments: Comments are defined with a hash (“#”) before the comment’s text
 [Code block example]
 \# this is a comment\<br />
+
 - Key: Value #this another comment
 
 </details>

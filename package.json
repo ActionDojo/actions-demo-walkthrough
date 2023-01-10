@@ -110,10 +110,18 @@
 					},
 					{
 						"id": "deploy",
-						"title": "Continuous Deploying (CD)",
-						"description": "Building CD workflows",
+						"title": "Continuous Deployment (CD)",
+						"description": "Building CD workflows to deploy your portfolio",
 						"media": {
 							"markdown": "./content/workflows/deploy.md"
+						}
+					},
+					{
+						"id": "live-site",
+						"title": "Deploying your portfolio",
+						"description": "Debug CD workflow runs and view your portfolio",
+						"media": {
+							"markdown": "./content/workflows/cd-output.md"
 						}
 					}
 				]
