@@ -1,11 +1,10 @@
-<h1>Continuous Integration (CI) Workflows</h1>
+<h1>Continuous Integration (CI) Workflow</h1>
 
-<h2>What is CI?</h2>
 <h3>Continuous Integration (CI) is a software development practice where developers regularly merge their code changes to the repository. This allows teams to detect and fix errors quickly, as well as automate the build, test, and deployment process. CI can improve the quality of software and reduce the time it takes to deliver new features to users.
 
 We'll build a simple CI workflow that scans your code for linting errors whenever someone pushes code or submits a pull request to the repository.
 
-**What's "linting"?** A series of steps that are run to check code for style and syntax errors. This ensures that code is consistent and follows best practices. The steps can vary, but may include things like checking for syntax errors, enforcing coding style guidelines, checking for formatting issues, and ensuring that code is correctly structured.
+**Linting:** Steps that are run to check code for style and syntax errors. This ensures that code is consistent and follows best practices. The steps can include things like checking for syntax errors, enforcing coding style guidelines, checking for formatting issues, and ensuring code is correctly structured.
 
 Let's get started!
 </h3>
@@ -40,7 +39,7 @@ Let's get started!
 
     - `github/super-linter@v2`: This step runs the Super Linter action, which lints your code using a variety of different linters. The `with` block specifies that we want to enable all of the available linters.
 
-    The `- uses` keyword is followed by the name of the action and its version (specified using the @ symbol). In this case, an action is being run from the GitHub Actions Marketplace. You can also run actions from other sources that you've defined within your repository, organization or enterprise.
+    The `- uses` keyword is followed by the name of the action being used and its version(specified using the @ symbol). In this case, an action is being run from the GitHub Actions Marketplace. You can also run actions that you've defined within your repository, or in other repositories in your organization/enterprise.
 
     The `with` block specifies any additional options or configurations for the action. In this case, the args option is being used to specify that all of the available linters should be enabled.
 
@@ -59,6 +58,6 @@ Let's get started!
         with:
             args: "--enable all"
     ```
-    To see your workflow run: push your changes, go to the Actions tab in GitHub, and click on the workflow run associated with this file.
+    To see your workflow run: push your changes, go to the Actions tab in GitHub, and click on the workflow run associated with this file. I'll explain how to do this in the next step.
 
 <br/><br/><br/>
