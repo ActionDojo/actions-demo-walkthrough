@@ -64,8 +64,7 @@ You can run multiple commands in a single `- run:` step by separating them with 
 
 Keep in mind that the `- run:` step will only succeed if the command returns an exit code of 0. If the command returns a non-zero exit code, the step will be considered a failure.</h3>
 
-<details>
-<summary><h2>Breakdown of YAML syntax</h2></summary>
+<details><summary><h2>Breakdown of YAML syntax</h2></summary>
 <h3>YAML (short for “Yet Another Markup Language”) is a human-readable data serialization language that is used for storing and transmitting data structures and configurations. It is often used for configuration files, but can also be used for storing data in a serialized form, such as database dumps or log files.
 
 **Some basic rules for YAML syntax in GitHub Actions:**

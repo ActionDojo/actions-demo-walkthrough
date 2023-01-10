@@ -21,12 +21,12 @@
     ![](./workflow-run.png)
 
 4. To view the output of a specific job, click on the job in the list on the left side-bar or in the pipeline visualizer. This will show you the steps that were run as part of the job, along with their output and duration.
-    ![](./job-summary.png)
+    ![](./view-job.png)
 
 5. To view the output of a specific step, click on the step in the list. This will show you the output of the step, including any log messages or error messages that were generated.
-    ![](./job-output.png)
-
+    ![](./step-summary.png)
     ![](./step-output.png)
+    ![](./step-output-2.png)
 
 By reviewing the output of workflow runs, you can understand what actions were taken as part of the workflow, and any errors or bugs that were caught by that workflow run. This is helpful for debugging errors in your code.
 </h3>
