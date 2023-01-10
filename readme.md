@@ -23,5 +23,6 @@ To test the plugin:
 
 Once the extension is ready, we'll need to export it as a package (vsix file) to be uploaded into the demo repository
 
-Note: This was forked an IBM extension so it'll have a lot of unneccessary remnant code. We should recreate this extension repo from scratch.
-Keep: The key files are the "package.json" file and all of the ".md" and ".png" files in the /content folder.
+Notes to eng:
+- This was forked an IBM extension so it'll have a lot of unneccessary remnant code. We should recreate this extension repo from scratch.
+- Keep the "package.json" file and the "/content" folder. Everything else can be scrapped.
