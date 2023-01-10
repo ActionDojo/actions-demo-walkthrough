@@ -1,35 +1,26 @@
-# vscode-ibmi-walkthroughs
+# Actions Demo Walkthrough
 
-This extension/repo is specifc to creating walkthroughs for Code for IBM i and IBM i related content.
+This VS Code extension is for testing and building the Actions Playground (MVP) walkthroughs. It'll have the most up-to-date content for the Actions Playground demo.
 
-## Plans:
+Current state: The rough draft workflow steps are all there (Simple workflow, CI and CD) – they will need some editing to actually work
 
-* [x] Introduction to Code for IBM i (done, but still open to PRs!)
-* [ ] Introduction to RPGLE
-* [ ] Introduction to CL
-* [ ] Writing your first service program
-* [ ] Introduction to COBOL
+Remaining work:
+- [ ] Add a final step to the "Workflows" walkthrough for the demo completion step
+- [ ] Add a walkthrough for "Optional Challenges"
 
-See something you want to add? Make a PR!
+To test the plugin:
+1. Open the repo in Codespaces
+2. Click the "Run and Debug" icon in the sidebar
+    
+    <img width="55" alt="Screenshot 2023-01-09 at 9 24 10 PM" src="https://user-images.githubusercontent.com/26313262/211468570-0aa8c15a-79e8-4131-95f9-b865c7add0d0.png">
+3. Click the green play icon at the top to run the extension for debugging
+    
+    <img width="346" alt="Screenshot 2023-01-09 at 9 24 53 PM" src="https://user-images.githubusercontent.com/26313262/211468675-38fc68c7-27e1-427d-b831-bc411efc8f14.png">
+4. Click the green refresh button to see any changes made to the extension 
+    
+    <img width="196" alt="Screenshot 2023-01-09 at 9 49 26 PM" src="https://user-images.githubusercontent.com/26313262/211471666-00c9eb56-5d57-4c35-8709-002f66e94592.png">
 
-## Contributing
+Once the extension is ready, we'll need to export it as a package (vsix file) to be uploaded into the demo repository
 
-This is an open project to make new and existing developers better at IBM i things! We'll take any type of PR, whether it's a spelling fix, or some additional paragraphs, or a whole new guide - we'd love that!
-
-### To get started
-
-1. Check out the `package.json` file, as this is where all the walkthroughs are defined. The example walkthrough I provided should be enough, but also check out:
-  * The [`walkthrough` property documentation](https://code.visualstudio.com/api/references/contribution-points#contributes.walkthroughs).
-  * The [MSFT example](https://github.com/microsoft/vscode-extension-samples/tree/main/getting-started-sample).
-2. Each steps requires a markdown file or an image and each walkthrough has it's own folder in the `content` folder for that content to live in.
-
-**Getting started is simple.**
-
-1. Make a fork on GitHub
-2. Open your fork on GitHub
-3. Press . (DOT) on your keyboard to open the web editor.
-   * From here you can make all the changes you want
-   * You can edit and preview your markdown in the web editor (which is just VS Code in the browser) with Command+Shift+V / Control+Shift+V.
-   * Testing your walkthrough won't work in the browser though, you will need to clone it on your local machine and start debugging it to try it out!
-4. Make your commits and push to your fork
-5. Go back to your fork on GitHub and make a PR when you are ready!
+Note: This was forked an IBM extension so it'll have a lot of unneccessary remnant code. We should recreate this extension repo from scratch.
+Keep: The key files are the "package.json" file and all of the ".md" and ".png" files in the /content folder.
