@@ -1,6 +1,6 @@
 <h1> YAML Syntax Challenges </h1>
 
-<h3> **Difficulty:** Easy </h3>
+<h3>Difficulty: Easy</h3>
 
 <h3>
 
