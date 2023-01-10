@@ -94,7 +94,7 @@
 					},
 					{
 						"id": "linter",
-						"title": "Continuous Integration (CI)",
+						"title": "Continuous Integration",
 						"description": "Building CI workflows",
 						"media": {
 							"markdown": "./content/workflows/linter.md"
@@ -110,7 +110,7 @@
 					},
 					{
 						"id": "deploy",
-						"title": "Continuous Deployment (CD)",
+						"title": "Continuous Deployment",
 						"description": "Building CD workflows",
 						"media": {
 							"markdown": "./content/workflows/deploy.md"
