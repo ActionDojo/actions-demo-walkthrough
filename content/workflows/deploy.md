@@ -66,14 +66,3 @@ To demonstrate the concept, we'll practice deploying a static portfolio website 
             FOLDER: build
     ```
     To see your workflow run: push your changes, go to the Actions tab in GitHub, and click on the workflow run associated with this file.
-
-(Optional) If you want to trigger the deployment workflow only when certain files have changed, you can specify a paths option in the on block. For example:
-
-```yml
-on:
-push:
-    branches:
-    - master
-    paths:
-    - 'src/**'
-```

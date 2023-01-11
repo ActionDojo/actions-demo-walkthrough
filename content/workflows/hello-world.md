@@ -21,7 +21,7 @@ We'll start by writing a simple workflow that prints "Hello World" into the cons
     on: [push]
 
     jobs:
-      build:
+      hello-world:
         runs-on: ubuntu-latest
         steps:
         - name: Hello world
@@ -46,7 +46,7 @@ We'll start by writing a simple workflow that prints "Hello World" into the cons
 `jobs:`
 <h3>Defines a set of tasks to be executed. Jobs are defined by a key (the name of the job) and the value (the details of the job). In this example, the job will run a single step that uses the echo command to print "Hello World" to the console. You can define multiple jobs in a single workflow, and each job can have multiple steps. Jobs can also depend on other jobs, allowing you to define complex workflows with multiple consecutive tasks.</h3>
 
-`build:`
+`hello-world:`
 <h3>This is the name of that specific job. A job is a named set of steps that define the work that needs to be done as part of a workflow. You can change the name of this job and it will still work.</h3>
 
 `runs-on:`
